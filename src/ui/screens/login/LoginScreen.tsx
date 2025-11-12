@@ -11,6 +11,7 @@ export default function LoginScreen() {
     <View>
       <TitleComp text="Login" />
       <ButtonComp text="Ir para home" action={() => navigate("Home")} color='#7fa2b6ff' />
+      <ButtonComp text="Ir para primeiro acesso" action={() => navigate("SignUp")} color='#7fa2b6ff' />
     </View>
   );
 }

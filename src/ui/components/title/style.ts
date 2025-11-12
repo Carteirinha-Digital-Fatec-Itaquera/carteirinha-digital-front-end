@@ -1,15 +1,15 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    sectionHeader: {
+    container: {
         paddingTop: 35,
         paddingBottom: 6,
         alignItems: 'center',
         marginBottom: 8
     },
 
-    sectionTitle: {
-        fontFamily: 'Montserrat-Bold',
+    title: {
+        fontFamily: 'Montserrat',
         fontSize: 16,
         color: '#333',
         textAlign: 'center'

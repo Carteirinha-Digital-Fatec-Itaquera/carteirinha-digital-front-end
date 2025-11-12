@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
     text: {
         color: '#fff',
         fontSize: 16,
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Montserrat',
         letterSpacing: 0.5
     },
 
