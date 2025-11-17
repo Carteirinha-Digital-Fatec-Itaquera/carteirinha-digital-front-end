@@ -6,26 +6,28 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 16,
   },
 
-  subcontainer: {
-    display: 'flex',
-    flexDirection: 'row',
-  },
-
   label: {
     fontFamily: 'Montserrat-Medium',
     fontSize: 14,
     color: labelColor,
+    marginBottom: 4,
     marginLeft: 12,
-    marginBottom: 4
-  },
+  }, 
 
   inputField: {
+    flexDirection: 'row',
+    alignItems: 'center',
     borderWidth: 1,
     borderColor: labelColor,
     borderRadius: 20,
-    padding: 14,
-    fontSize: 14,
     backgroundColor: backgroundSecondaryColor,
-    fontFamily: 'Montserrat-Medium',
+    paddingHorizontal: 10,
+    paddingVertical: 3
   },
-})
+
+  inputText: {
+    flex: 1,
+    fontSize: 14,
+    fontFamily: 'Montserrat-Medium',
+  }
+});
