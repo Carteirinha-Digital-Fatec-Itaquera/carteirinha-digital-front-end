@@ -3,6 +3,8 @@ import HomeScreen from "../ui/screens/home/HomeScreen"
 import LoginScreen from "../ui/screens/login/LoginScreen"
 import SignUpScreen from "../ui/screens/signup/SignUpScreen"
 import PasswordRecoveryScreen from "../ui/screens/passwordrecovery/PasswordRecoveryScreen"
+import MainMenuScreen from "../ui/screens/mainmenu/MainMenuScreen"
+import CarteirinhaScreen from "../ui/screens/carteirinha/CarteirinhaScreen"
 
 const Stack = createNativeStackNavigator()
 
@@ -30,6 +32,18 @@ export default function StackRoute() {
       <Stack.Screen
         name="PasswordRecovery"
         component={PasswordRecoveryScreen}
+        options={{ headerShown: false }}
+      />
+
+      <Stack.Screen
+        name="MainMenu"
+        component={MainMenuScreen}
+        options={{ headerShown: false }}
+      />
+
+      <Stack.Screen
+        name="Carteirinha"
+        component={CarteirinhaScreen}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>
