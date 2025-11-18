@@ -12,7 +12,7 @@ export default function DigitalStudentCardScreen() {
     <View style={styles.container}>
       <SpacerComp vertical={20} />
       <TitleComp text="DigitalStudentCard" showButton={true} actionButton={() => navigate("MainMenu")} />
-      <Image source={require("../../../assets/images/fatec_itaquera_logo_preto.png")} style={styles.logo_fatec} />
+      <Image source={require("../../../assets/images/fatec_itaquera_logo_preto.png")} style={styles.logo} />
       <View style={styles.subcontainer}>
         <View style={styles.imagecontainer}>
           <Image source={require("../../../assets/images/perfil_default.png")} style={styles.image} />

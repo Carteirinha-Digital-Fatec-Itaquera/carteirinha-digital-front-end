@@ -16,6 +16,8 @@ export const styles = StyleSheet.create({
     backgroundColor: backgroundSecondaryColor
   },
   logo: {
-    margin: 20
+    margin: 10,
+    width: 190,
+    height: 115
   }
 })

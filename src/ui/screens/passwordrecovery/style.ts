@@ -15,7 +15,10 @@ export const styles = StyleSheet.create({
     borderTopEndRadius: 60,
     backgroundColor: backgroundSecondaryColor
   },
+  
   logo: {
-    margin: 20
+    margin: 10,
+    width: 190,
+    height: 115
   }
 })

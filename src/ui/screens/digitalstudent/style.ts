@@ -40,10 +40,10 @@ export const styles = StyleSheet.create({
   texto2: {
     marginRight: 30,
   },
-  logo_fatec: {
-    margin: 20,
-    width: 100,
-    height: 60
+  logo: {
+    margin: 10,
+    width: 190,
+    height: 115
   },
   logo_cps: {
     marginBottom: 40,

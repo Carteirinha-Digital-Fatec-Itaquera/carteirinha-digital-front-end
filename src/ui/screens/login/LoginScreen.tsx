@@ -32,6 +32,7 @@ export default function LoginScreen() {
         <ButtonComp text="Entrar" action={() => navigate("MainMenu")} color={backgroundColor} />
         <SpacerComp vertical={20} />
         <TextClickableComp text="Este é seu primeiro acesso? Clique aqui" action={() => navigate("SignUp")} />
+        <Image source={require("../../../assets/images/logos_cps_governo_com_slogan_horizontal_cor.png")} style={styles.logocps} />
       </View>
     </View>
   );
