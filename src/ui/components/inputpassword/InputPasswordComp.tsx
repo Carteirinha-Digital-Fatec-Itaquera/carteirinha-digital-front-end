@@ -2,8 +2,6 @@ import React, { Dispatch, SetStateAction, useState } from "react";
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
-import { labelColor } from "../../themes/Color";
-
 import { styles } from "./style";
 
 type InputPasswordProps = {

@@ -5,6 +5,7 @@ import { ButtonComp } from '../../components/button/ButtonComp';
 import { TitleComp } from '../../components/title/TitleComp';
 import { backgroundColor } from '../../themes/Color';
 import { styles } from './style';
+import { SpacerComp } from '../../components/spacer/SpacerComp';
 
 export default function MainMenuScreen() {
   const { navigate } = useNavigation<NavigationProps>();
@@ -16,15 +17,16 @@ export default function MainMenuScreen() {
         style={styles.logo} 
       />
       <View style={styles.subcontainer}>
+        <SpacerComp vertical={20} />
         <TitleComp text="Bem-vindo, Fulano" size={18} />
-        
+        <SpacerComp vertical={20} />
         <ButtonComp 
-          text="Carteirinha" 
-          action={() => navigate("Carteirinha")} 
+          text="DigitalStudentCard" 
+          action={() => navigate("DigitalStudentCard")} 
           color={backgroundColor} 
         />
-        
-        <ButtonComp 
+        <SpacerComp vertical={20} />
+        {/* <ButtonComp 
           text="Configurações" 
           action={() => navigate("Settings")} 
           color={backgroundColor} 
@@ -34,7 +36,7 @@ export default function MainMenuScreen() {
           text="Ajuda" 
           action={() => navigate("Help")} 
           color={backgroundColor} 
-        />
+        /> */}
         
         <ButtonComp 
           text="Sair" 

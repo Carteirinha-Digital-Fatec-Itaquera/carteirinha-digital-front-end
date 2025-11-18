@@ -1,22 +1,15 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import HomeScreen from "../ui/screens/home/HomeScreen"
 import LoginScreen from "../ui/screens/login/LoginScreen"
 import SignUpScreen from "../ui/screens/signup/SignUpScreen"
 import PasswordRecoveryScreen from "../ui/screens/passwordrecovery/PasswordRecoveryScreen"
 import MainMenuScreen from "../ui/screens/mainmenu/MainMenuScreen"
-import CarteirinhaScreen from "../ui/screens/carteirinha/CarteirinhaScreen"
+import DigitalStudentCardScreen from "../ui/screens/digitalstudent/DigitalStudentCardScreen"
 
 const Stack = createNativeStackNavigator()
 
 export default function StackRoute() {
   return (
     <Stack.Navigator initialRouteName="Login">
-      <Stack.Screen
-        name="Home"
-        component={HomeScreen}
-        options={{ headerShown: false }}
-      />
-
       <Stack.Screen
         name="Login"
         component={LoginScreen}
@@ -42,8 +35,8 @@ export default function StackRoute() {
       />
 
       <Stack.Screen
-        name="Carteirinha"
-        component={CarteirinhaScreen}
+        name="DigitalStudentCard"
+        component={DigitalStudentCardScreen}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

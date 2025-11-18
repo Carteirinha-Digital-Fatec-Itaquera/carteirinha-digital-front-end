@@ -6,7 +6,7 @@ import { TitleComp } from '../../components/title/TitleComp';
 import { InputComp } from '../../components/input/InputComp';
 import { Dispatch, SetStateAction, useState } from 'react';
 import { backgroundColor } from '../../themes/Color';
-import { Spacer } from '../../components/spacer/Spacer';
+import { SpacerComp } from '../../components/spacer/SpacerComp';
 import { InputPasswordComp } from '../../components/inputpassword/InputPasswordComp';
 
 import { styles } from './style';
@@ -84,11 +84,11 @@ type PasswordRecoveryCompProps = {
 function PasswordRecoveryPart1Comp({ navigateBackButton, value, setValue, navigateNextStepButton }: PasswordRecoveryCompProps) {
   return (
     <>
-      <Spacer vertical={20} />
+      <SpacerComp vertical={20} />
       <TitleComp text="Recuperação de senha" size={20} showButton={true} actionButton={navigateBackButton} />
-      <Spacer vertical={40} />
+      <SpacerComp vertical={40} />
       <InputComp label="E-mail institucional" placeholder="Ex: fulano@fatec.sp.gov.br" value={value} onChangeText={setValue} />
-      <Spacer vertical={60} />
+      <SpacerComp vertical={60} />
       <ButtonComp text="Enviar E-mail" action={() => navigateNextStepButton()} color={backgroundColor} />
     </>
   )
@@ -97,11 +97,11 @@ function PasswordRecoveryPart1Comp({ navigateBackButton, value, setValue, naviga
 function PasswordRecoveryPart2Comp({ navigateBackButton, value, setValue, navigateNextStepButton }: PasswordRecoveryCompProps) {
   return (
     <>
-      <Spacer vertical={20} />
+      <SpacerComp vertical={20} />
       <TitleComp text="Recuperação de senha" size={20} showButton={true} actionButton={navigateBackButton} />
-      <Spacer vertical={40} />
+      <SpacerComp vertical={40} />
       <InputCodeComp label="Insira o código" onChangeText={setValue} />
-      <Spacer vertical={60} />
+      <SpacerComp vertical={60} />
       <ButtonComp text="Enviar código" action={navigateNextStepButton} color={backgroundColor} />
     </>
   )
@@ -111,13 +111,13 @@ function PasswordRecoveryPart3Comp({ navigateBackButton, value, setValue, naviga
   const [repeatPassword, setRepeatPassword] = useState("")
   return (
     <>
-      <Spacer vertical={20} />
+      <SpacerComp vertical={20} />
       <TitleComp text="Recuperação de senha" size={20} showButton={true} actionButton={navigateBackButton} />
-      <Spacer vertical={40} />
+      <SpacerComp vertical={40} />
       <InputPasswordComp label="Insira a nova senha" placeholder="Ex: ********" value={value} onChangeText={setValue} />
-      <Spacer vertical={20} />
+      <SpacerComp vertical={20} />
       <InputPasswordComp label="Repita a senha" placeholder="Ex: ********" value={repeatPassword} onChangeText={setRepeatPassword} />
-      <Spacer vertical={60} />
+      <SpacerComp vertical={60} />
       <ButtonComp text="Enviar código" action={navigateNextStepButton} color={backgroundColor} />
     </>
   )
