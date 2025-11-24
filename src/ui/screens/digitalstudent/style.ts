@@ -16,10 +16,10 @@ export const styles = StyleSheet.create({
   imagecontainer: {
     flexDirection: 'row',
     margin: 10,
-    gap: 30
+    gap: "20%"
   },
   image: {
-    width: 120,
+    width: "40%",
     height: 130,
     borderRadius: 5
   },
@@ -36,11 +36,17 @@ export const styles = StyleSheet.create({
   },
   texto1: {
     fontWeight: 'bold',
+    fontFamily: 'Montserrat-Medium',
+    fontSize: 16
   },
   texto2: {
-    marginRight: 30,
+    marginRight: "24%",
+    fontFamily: 'Montserrat-Medium',
+    fontSize: 16
   },
   logo: {
+    display: 'flex',
+    alignSelf: 'center',
     margin: 10,
     width: 190,
     height: 115
@@ -49,5 +55,11 @@ export const styles = StyleSheet.create({
     marginBottom: 40,
     width: 100,
     height: 67
+  },
+  logocpssp: {
+    display: 'flex',
+    alignSelf: 'center',
+    width: 300,
+    height: 50,
   }
 })
